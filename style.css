@@ -3,18 +3,47 @@
     padding: 0;
 }
 
-table
-{
-  background-color: bisque;
+body {
+  background-color: skyblue;
+}
+
+div {
+  text-align: center;
+}
+
+img {
+  margin-top: 20px;
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+
+table {
+  background-color: black;
   text-indent: 4px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 th {
     background-color: brown;
     color: #fff;
-    width: 100px;
+    width: 120px;
+    height: 30px;
+    text-transform: uppercase;
 }
 
 td {
   text-align: center;
+  background-color: bisque;
+  width: 120px;
+  height: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 25px;
 }

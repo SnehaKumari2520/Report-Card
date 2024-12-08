@@ -7,50 +7,82 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Result 2024-25</h2>
+    <div class="logo">
+        <img src="logo.jpg" alt="logo">
+        <h1 class="name">RajKamal Saraswati Vidya Mandir, Dhanbad</h1>
+        <h3>Ashok Nagar, Dhansar, Dhanbad, Jharkhand-826001</h3>
+        <p><i>Affiliated to CBSE, New Delhi</i></p>
+        <p>Affiliation No - 3430048</p>
+    </div>
     <table id="reportCard">
+        <h2><i>Batch 2024-25</i></h2>
         <tr>
-            <th>Name</th>
+            <th style="width: 160px;">Name / Subjects</th>
             <th>Physics</th>
             <th>Chemistry</th>
             <th>Math</th>
             <th>Biology</th>
+            <th>English</th>
             <th>Total</th>
             <th>Average</th>
         </tr>
         <tr>
-            <td>Sneha</td>
+            <td>Sneha Kumari</td>
             <td>72</td>
-            <td>69</td>
+            <td>80</td>
             <td>77</td>
             <td>82</td>
+            <td>96</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
-            <td>Usha</td>
-            <td>50</td>
-            <td>80</td>
-            <td>34</td>
-            <td>100</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Shroddha</td>
-            <td>40</td>
+            <td>Usha Das</td>
             <td>60</td>
-            <td>89</td>
+            <td>80</td>
+            <td>62</td>
             <td>100</td>
+            <td>72</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
-            <td>Disha</td>
+            <td>Shroddha Majumdar</td>
+            <td>52</td>
+            <td>60</td>
+            <td>85</td>
+            <td>100</td>
+            <td>68</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Disha Ghosh</td>
             <td>50</td>
             <td>80</td>
             <td>70</td>
+            <td>65</td>
+            <td>52</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Snighdha Roy</td>
             <td>50</td>
+            <td>70</td>
+            <td>52</td>
+            <td>65</td>
+            <td>52</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Dishari Sen</td>
+            <td>58</td>
+            <td>70</td>
+            <td>70</td>
+            <td>65</td>
+            <td>69</td>
             <td></td>
             <td></td>
         </tr>
@@ -60,12 +92,12 @@
             const table = document.getElementById('reportCard');
             for (let i = 1; i < table.rows.length; i++) {
                 let total = 0;
-                for (let j = 1; j <= 4; j++) {
+                for (let j = 1; j <= 5; j++) {
                     total += parseInt(table.rows[i].cells[j].innerText);
                 }
-                let average = total / 4;
-                table.rows[i].cells[5].innerText = total;
-                table.rows[i].cells[6].innerText = average.toFixed(2);
+                let average = total / 5;
+                table.rows[i].cells[6].innerText = total;
+                table.rows[i].cells[7].innerText = average.toFixed(2);
             }
         });
     </script>
